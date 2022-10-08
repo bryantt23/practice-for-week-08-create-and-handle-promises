@@ -28,11 +28,16 @@ function liftWeights() {
   });
 }
 
-async function workout() {
+// async function workout() {
+//   // Your code here
+//   await stretch();
+//   await runOnTreadmill();
+//   await liftWeights();
+// }
+
+function workout() {
   // Your code here
-  await stretch();
-  await runOnTreadmill();
-  await liftWeights();
+  stretch().then(runOnTreadmill).then(liftWeights);
 }
 
 /* ============================ TEST YOUR CODE ============================
